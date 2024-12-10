@@ -35,7 +35,7 @@ ce sont des variable disponible partout quel que soit le contexte, exemple : $_G
 string($str = "string"), array($array = {"value1", "value2"}), integer($i = 0), NULL, Boolean ($is = true), float($val = 2.3), object ($val = new Objet()).
 
 8.	Existe-t-il plusieurs types de tableaux en PHP, si oui lesquels ?
-tableau simple, tableau associatif, 
+tableau simple, tableau associatif.
 
 9.	Quelles sont les différentes structures de contrôles qu’il existe en algorithmie ? Donner un exemple pour chacune d’entre elles
 
@@ -44,13 +44,15 @@ tableau simple, tableau associatif,
 cette fonction est count()
 
 11.	Qu’est-ce qu’une session ? Quelle fonction permet de démarrer une session en PHP ? Donner un exemple d’utilisation en PHP
-
+la session est un tableau associatif ou l'on peut stocker des valeurs qui sont par la suite accessible depuis n'importe quel fichier php du projet. la fonction est session_start().
 
 12.	Qu’est-ce qu’un cookie ? Donner un exemple d’utilisation en PHP
+
 13.	Quelle est la différence entre les instructions « require » et « include » en PHP
 include = pas nécessaire (pas d'erreur lors de l'execution), require = nécessaire (erreur à l'execution).+
 
 14.	Comment effectuer une redirection en PHP ?
+la fonction header() permet une redirection via l'url.
 
 15.	Définir la partie « front-end » et « back-end » d’une application
 le front-end est la partie qui va définir le visuel d'une application, le back-end est la partie non visible d'une application c'est celle qui va gêré la partie technique
@@ -127,12 +129,16 @@ la balise <a> permet de créer un lien hypertexte
 
 ## Modélisation - Base de données
 67.	Qu’est-ce que la modélisation de données ? Définir la méthode Merise
+la modélisation de donnée est le fait de rendre visuel une base de donnée lors de sa creation, 
+
 68.	Quelles sont les 3 étapes principales de la méthode Merise ? 
 a.	Analyse, conception et réalisation
 b.	Planification, exécution et contrôle
 c.	Création, modification et suppression
 69.	Qu’est-ce qu’un modèle conceptuel de données (MCD) en Merise ?
+c'est une représentation sous forme de shema d'une base de donnée. permet d'organiser et visualisé une structure lors de sa création.
 70.	Qu’est-ce qu’un modèle logique de données (MLD) en Merise ?
+le mld est l'adaptation du mcd à une base de donnée on pourra y visualiser les elements d'une table comme les clé etrangère.
 71.	Donner la définition des mots suivants :
 a.	Entité
 b.	Relation
@@ -151,6 +157,7 @@ c.	SGBD (donner 2 exemples de SGBD)
 79.	Qu’est-ce que l’intégrité référentielle dans une base de données ?
 80.	Quelles sont les fonctions d’agrégation en SQL ?
 81.	Qu’est-ce qu’un CRUD dans le contexte d’une base de données ?
+create, read, update, delete
 82.	Quelles sont les clauses qui permettent de :
 a.	Insérer un nouvel enregistrement dans une table
 b.	Modifier un enregistrement dans une table
